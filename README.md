@@ -11,4 +11,49 @@ Currently, two official plugins are available:
 
 `npm create vite@latest`
 
-### Check https://tailwindcss.com/
+#### Check https://tailwindcss.com/
+
+### Tailwindcss fix
+
+```
+npm install tailwindcss postcss autoprefixer
+```
+
+```
+npm install postcss-flexbugs-fixes postcss-normalize postcss-preset-env
+```
+
+```
+npm install react-scripts@latest
+```
+
+## postcss.config.cjs
+
+```
+module.exports = {
+  plugins: [require("tailwindcss"), require("autoprefixer")],
+};
+```
+
+## tailwind.config.js
+
+```
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./src/pages/**/*.{js,jsx,ts,tsx}",
+    "./src/components/**/*.{js,jsx,ts,tsx}",
+    "./src/containers/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+};
+```
+
+## VSCode Extension
+
+Tailwind CSS IntelliSense
