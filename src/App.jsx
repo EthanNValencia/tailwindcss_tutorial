@@ -1,5 +1,5 @@
 // import "./App.css";
-
+// https://www.youtube.com/watch?v=ft30zcMlFao 109 mins
 function App() {
   return (
     <>
@@ -11,7 +11,11 @@ function App() {
         This is really awesome! No more media queries?
       </h1>
       <h1 className="mb-1">Margin bottom of 1</h1>
-      <h1 className="bg-[#b1d146] mb-3">Specifying background color.</h1>
+      <h1 className="bg-[#b1d146]">Specifying background color.</h1>
+      <h1 className="break-all mb-3">
+        The large fake word will break
+        laskskdkakkasdkaskdkaskdkasdkakskdkaskdkasdkk all.
+      </h1>
 
       <p className="bg-npt_colors-10">npt_colors-10</p>
       <p className="bg-npt_colors-20">npt_colors-20</p>
