@@ -1,6 +1,18 @@
+import React, { useState } from "react";
+import CustomModal from "./components/CustomModal";
 // import "./App.css";
 // https://www.youtube.com/watch?v=ft30zcMlFao 109 mins
 function App() {
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+
+  const openModal = () => {
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
   return (
     <>
       <h1 className="text-3xl font-bold underline">Hello world!</h1>
@@ -25,9 +37,108 @@ function App() {
       <p className="bg-npt_colors-1">npt_colors-300</p>
       <p className="bg-npt_colors-2">npt_colors-350</p>
 
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      <div className="grid grid-cols-6 gap-1 text-center">
+        <div className="col-start-2 col-span-4 bg-red-400">01</div>
+        <div className="col-start-1 col-end-3 bg-red-400">02</div>
+        <div className="col-end-7 col-span-2 bg-red-400">03</div>
+        <div className="col-start-1 col-end-7 bg-red-400">04</div>
+      </div>
+
+      {/* gap is really awesome, it puts space between the contained elements */}
+      <div className="grid xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 bg-blue-300 gap-4 p-4">
+        <div className="bg-sky-400 p-6 rounded-lg">First Element</div>
+        <div className="bg-green-400 p-6 rounded-lg">Second Element</div>
+        <div className="bg-green-700 p-6 rounded-lg">Third Element</div>
+        <div className="bg-slate-500 p-6 rounded-lg">Fourth Element</div>
+        <div className="bg-slate-500 p-6 rounded-lg">Fifth Element</div>
+        <div className="bg-green-500 p-6 rounded-lg">Sixth Element</div>
+      </div>
+
+      <button className="bg-npt_colors-350 hover:bg-npt_colors-300 text-white font-bold py-2 px-4 rounded-full">
         Save Btn
       </button>
+      <button class="bg-purple-900 text-white hover:bg-blue-400 font-bold py-2 px-4 mt-3 rounded items-center">
+        Learn More
+      </button>
+      <h1 className="h-16 bg-blue-500 text-2xl font-bold">This is my h1</h1>
+      <p className="bg-red-300 -mt-8 ml-8 mr-8">This is a paragraph.</p>
+
+      <div className="p-4">
+        <h1>React Modal Example</h1>
+        <button onClick={openModal}>Open Modal</button>
+        <CustomModal isOpen={modalIsOpen} closeModal={closeModal} />
+      </div>
+
+      <div>
+        <div>Header</div>
+        <div className="flex flex-row">
+          <div>Main Content</div>
+          <div className="flex flex-col">
+            <div>Sidebar</div>
+            <div>Menu</div>
+          </div>
+        </div>
+        <div>Footer</div>
+      </div>
+
+      <div>
+        <div>Header</div>
+        <div className="flex justify-between">
+          <div>Main Content</div>
+          <div className="bg-sky-300">Sidebar</div>
+          <div>Menu</div>
+        </div>
+        <div className="flex justify-evenly">
+          <div>Main Content</div>
+          <div className="bg-sky-300">Sidebar</div>
+          <div>Menu</div>
+        </div>
+        <div className="flex justify-center">
+          <div>Main Content</div>
+          <div className="bg-sky-300">Sidebar</div>
+          <div>Menu</div>
+        </div>
+        <div>Footer</div>
+      </div>
+
+      {/* This is really good for handling mobile */}
+      <div className="">
+        <div>Header</div>
+        <div className="flex flex-col sm:flex-row">
+          <div className="basis-4/12 bg-red-300">Main Content</div>
+          <div className="basis-6/12 bg-red-400">Sidebar</div>
+          <div className="basis-2/12 bg-red-500">Menu</div>
+        </div>
+        <div className="flex flex-wrap w-full">
+          <div className="w-32 grow">01</div>
+          <div className="w-32 grow">02</div>
+          <div className="w-32 grow">03</div>
+          <div className="w-32 grow">04</div>
+          <div className="w-32 grow">05</div>
+        </div>
+        <div>Footer</div>
+      </div>
+
+      <div>
+        <div className="w-16 h-16 bg-red-500"></div>
+        <div className="w-16 h-16 bg-green-500"></div>
+      </div>
+      <div className="flex">
+        <div className="w-1/2 h-16 bg-red-500"></div>
+        <div className="w-1/2 h-16 bg-green-500"></div>
+      </div>
+      <div className="flex">
+        <div className="w-2/5 h-16 bg-red-500"></div>
+        <div className="w-3/5 h-16 bg-green-500"></div>
+      </div>
+      <div className="flex">
+        <div className="w-1/4 h-16 bg-red-500"></div>
+        <div className="w-3/4 h-16 bg-green-500"></div>
+      </div>
+      <div className="flex">
+        <div className="w-1/4 h-16 bg-red-500"></div>
+        <div className="w-1/4 h-16 bg-green-500"></div>
+      </div>
     </>
   );
 }
