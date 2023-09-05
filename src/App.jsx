@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import CustomModal from "./components/CustomModal";
 // import "./App.css";
-// https://www.youtube.com/watch?v=ft30zcMlFao 109 mins
+// https://www.youtube.com/watch?v=ft30zcMlFao 2:09
 function App() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
@@ -29,6 +29,8 @@ function App() {
         laskskdkakkasdkaskdkaskdkasdkakskdkaskdkasdkk all.
       </h1>
 
+      <div className="bg-red-300 text-white font-bold p-4">Hello</div>
+
       <p className="bg-npt_colors-10">npt_colors-10</p>
       <p className="bg-npt_colors-20">npt_colors-20</p>
       <p className="bg-npt_colors-30">npt_colors-30</p>
@@ -50,8 +52,60 @@ function App() {
         <div className="bg-green-400 p-6 rounded-lg">Second Element</div>
         <div className="bg-green-700 p-6 rounded-lg">Third Element</div>
         <div className="bg-slate-500 p-6 rounded-lg">Fourth Element</div>
-        <div className="bg-slate-500 p-6 rounded-lg">Fifth Element</div>
+        <div className="bg-slate-300 p-6 rounded-lg col-span-2">Fifth Element</div>
         <div className="bg-green-500 p-6 rounded-lg">Sixth Element</div>
+      </div>
+
+      <div className="grid grid-cols-6 gap-4 bg-slate-200 p-4 text-center">
+        <div className="bg-blue-400 col-span-4 col-start-2 rounded-lg p-6">01</div>
+        <div className="bg-blue-400 col-span-2 col-start-1 rounded-lg p-6">02</div>
+        <div className="bg-blue-400 col-span-2 col-start-5 rounded-lg p-6">03</div>
+        <div className="bg-blue-400 col-span-6 col-start-1 rounded-lg p-6">04</div>
+      </div>
+
+      <div className="grid grid-flow-col auto-cols-max gap-4 bg-slate-200 p-4 text-center">
+        <div className="bg-blue-400 rounded-lg p-6">01</div>
+        <div className="bg-blue-400 rounded-lg p-6">02</div>
+        <div className="bg-blue-400 rounded-lg p-6">03</div>
+        <div className="bg-blue-400 rounded-lg p-6">04</div>
+        <div className="bg-blue-400 rounded-lg p-6">05</div>
+        <div className="bg-blue-400 rounded-lg p-6">06</div>
+        <div className="bg-blue-400 rounded-lg p-6">07</div>
+        <div className="bg-blue-400 rounded-lg p-6">08</div>
+      </div>
+      <h1>grid-rows deals with the number of elements within a column.</h1>
+      <div className="grid grid-flow-col grid-rows-3 gap-4 bg-slate-200 p-4 text-center">
+        <div className="bg-blue-400 rounded-lg p-6">01</div>
+        <div className="bg-blue-400 rounded-lg p-6">02</div>
+        <div className="bg-blue-400 rounded-lg p-6">03</div>
+        <div className="bg-blue-400 rounded-lg p-6">04</div>
+        <div className="bg-blue-400 rounded-lg p-6">05</div>
+        <div className="bg-blue-400 rounded-lg p-6">06</div>
+        <div className="bg-blue-400 rounded-lg p-6">07</div>
+        <div className="bg-blue-400 rounded-lg p-6">08</div>
+        <div className="bg-blue-400 rounded-lg p-6">09</div>
+      </div>
+      <div className="grid grid-flow-col grid-rows-4 gap-4 bg-slate-200 p-4 text-center">
+        <div className="row-span-2 col-span-2 bg-blue-400 rounded-lg p-6">01</div>
+        <div className="col-span-2 bg-blue-400 rounded-lg p-6">02</div>
+        <div className="bg-blue-400 rounded-lg p-6">03</div>
+        <div className="col-span-2 bg-blue-400 rounded-lg p-6">04</div>
+        <div className="row-span-2 bg-blue-400 rounded-lg p-6">05</div>
+        <div className="col-span-2 bg-blue-400 rounded-lg p-6">06</div>
+        <div className="bg-blue-400 rounded-lg p-6">07</div>
+        <div className="bg-blue-400 rounded-lg p-6">08</div>
+        <div className="bg-blue-400 rounded-lg p-6">09</div>
+      </div>
+      <div className="grid grid-flow-row-dense grid-cols-3 gap-4 bg-slate-200 p-4 text-center">
+        <div className="col-span-2 bg-blue-400 rounded-lg p-6">01</div>
+        <div className="col-span-2 bg-blue-400 rounded-lg p-6">Tailwind fills the space, pretty neat!</div>
+        <div className="bg-blue-400 rounded-lg p-6">03</div>
+        <div className=" bg-blue-400 rounded-lg p-6">04</div>
+        <div className=" bg-blue-400 rounded-lg p-6">05</div>
+        <div className=" bg-blue-400 rounded-lg p-6">06</div>
+        <div className="bg-blue-400 rounded-lg p-6">07</div>
+        <div className="bg-blue-400 rounded-lg p-6">08</div>
+        <div className="bg-blue-400 rounded-lg p-6">09</div>
       </div>
 
       <button className="bg-npt_colors-350 hover:bg-npt_colors-300 text-white font-bold py-2 px-4 rounded-full">
