@@ -52,15 +52,25 @@ function App() {
         <div className="bg-green-400 p-6 rounded-lg">Second Element</div>
         <div className="bg-green-700 p-6 rounded-lg">Third Element</div>
         <div className="bg-slate-500 p-6 rounded-lg">Fourth Element</div>
-        <div className="bg-slate-300 p-6 rounded-lg col-span-2">Fifth Element</div>
+        <div className="bg-slate-300 p-6 rounded-lg col-span-2">
+          Fifth Element
+        </div>
         <div className="bg-green-500 p-6 rounded-lg">Sixth Element</div>
       </div>
 
       <div className="grid grid-cols-6 gap-4 bg-slate-200 p-4 text-center">
-        <div className="bg-blue-400 col-span-4 col-start-2 rounded-lg p-6">01</div>
-        <div className="bg-blue-400 col-span-2 col-start-1 rounded-lg p-6">02</div>
-        <div className="bg-blue-400 col-span-2 col-start-5 rounded-lg p-6">03</div>
-        <div className="bg-blue-400 col-span-6 col-start-1 rounded-lg p-6">04</div>
+        <div className="bg-blue-400 col-span-4 col-start-2 rounded-lg p-6">
+          01
+        </div>
+        <div className="bg-blue-400 col-span-2 col-start-1 rounded-lg p-6">
+          02
+        </div>
+        <div className="bg-blue-400 col-span-2 col-start-5 rounded-lg p-6">
+          03
+        </div>
+        <div className="bg-blue-400 col-span-6 col-start-1 rounded-lg p-6">
+          04
+        </div>
       </div>
 
       <div className="grid grid-flow-col auto-cols-max gap-4 bg-slate-200 p-4 text-center">
@@ -86,7 +96,9 @@ function App() {
         <div className="bg-blue-400 rounded-lg p-6">09</div>
       </div>
       <div className="grid grid-flow-col grid-rows-4 gap-4 bg-slate-200 p-4 text-center">
-        <div className="row-span-2 col-span-2 bg-blue-400 rounded-lg p-6">01</div>
+        <div className="row-span-2 col-span-2 bg-blue-400 rounded-lg p-6">
+          01
+        </div>
         <div className="col-span-2 bg-blue-400 rounded-lg p-6">02</div>
         <div className="bg-blue-400 rounded-lg p-6">03</div>
         <div className="col-span-2 bg-blue-400 rounded-lg p-6">04</div>
@@ -98,7 +110,9 @@ function App() {
       </div>
       <div className="grid grid-flow-row-dense grid-cols-3 gap-4 bg-slate-200 p-4 text-center">
         <div className="col-span-2 bg-blue-400 rounded-lg p-6">01</div>
-        <div className="col-span-2 bg-blue-400 rounded-lg p-6">Tailwind fills the space, pretty neat!</div>
+        <div className="col-span-2 bg-blue-400 rounded-lg p-6">
+          02 Tailwind fills the space, pretty neat!
+        </div>
         <div className="bg-blue-400 rounded-lg p-6">03</div>
         <div className=" bg-blue-400 rounded-lg p-6">04</div>
         <div className=" bg-blue-400 rounded-lg p-6">05</div>
@@ -106,12 +120,337 @@ function App() {
         <div className="bg-blue-400 rounded-lg p-6">07</div>
         <div className="bg-blue-400 rounded-lg p-6">08</div>
         <div className="bg-blue-400 rounded-lg p-6">09</div>
+        <div className="col-span-2 bg-blue-400 rounded-lg p-6">10</div>
       </div>
+
+      <div className="h-auto text-white bg-slate-900">
+        <div className="container mx-auto px-2 columns-lg">
+          <img
+            className="w-64 float-right"
+            src="https://images.pexels.com/photos/1003914/pexels-photo-1003914.jpeg?cs=srgb&dl=pexels-samer-daboul-1003914.jpg&fm=jpg"
+            alt="Image not found"
+          ></img>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi
+            tempus iaculis urna id volutpat lacus laoreet. Hac habitasse platea
+            dictumst quisque sagittis purus sit amet volutpat. Pharetra magna ac
+            placerat vestibulum. Nunc pulvinar sapien et ligula ullamcorper
+            malesuada. Quam id leo in vitae turpis. Ipsum dolor sit amet
+            consectetur. Nunc vel risus commodo viverra maecenas accumsan. Nisl
+            suscipit adipiscing bibendum est ultricies integer quis auctor. Odio
+            euismod lacinia at quis risus. Enim diam vulputate ut pharetra sit.
+            Diam ut venenatis tellus in metus vulputate eu scelerisque felis.
+            Viverra orci sagittis eu volutpat odio facilisis mauris sit.
+          </p>
+          <p>
+            Sit amet tellus cras adipiscing enim eu turpis egestas. Nulla
+            aliquet porttitor lacus luctus accumsan tortor. Sit amet tellus cras
+            adipiscing. Mattis pellentesque id nibh tortor id aliquet lectus
+            proin. Sit amet nisl suscipit adipiscing bibendum est ultricies.
+            Tortor at risus viverra adipiscing. Pharetra magna ac placerat
+            vestibulum. Sed egestas egestas fringilla phasellus faucibus
+            scelerisque eleifend donec. Morbi tempus iaculis urna id volutpat
+            lacus laoreet non. Faucibus et molestie ac feugiat sed lectus.
+            Lectus nulla at volutpat diam ut venenatis. Iaculis urna id volutpat
+            lacus laoreet. Urna cursus eget nunc scelerisque viverra mauris in
+            aliquam sem. Nunc pulvinar sapien et ligula ullamcorper malesuada
+            proin libero. Sapien et ligula ullamcorper malesuada proin libero
+            nunc consequat. Quis varius quam quisque id diam vel quam elementum
+            pulvinar. Sed augue lacus viverra vitae congue eu consequat.
+            Fringilla phasellus faucibus scelerisque eleifend donec.
+          </p>
+          <img
+            className="w-32 float-left"
+            src="https://images.pexels.com/photos/1003914/pexels-photo-1003914.jpeg?cs=srgb&dl=pexels-samer-daboul-1003914.jpg&fm=jpg"
+            alt="Image not found"
+          ></img>
+          <p>
+            Purus ut faucibus pulvinar elementum integer enim neque volutpat. In
+            iaculis nunc sed augue lacus viverra vitae congue. Posuere urna nec
+            tincidunt praesent. A scelerisque purus semper eget duis at tellus
+            at urna. Sed risus pretium quam vulputate. Sit amet aliquam id diam.
+            Posuere lorem ipsum dolor sit. Proin sagittis nisl rhoncus mattis
+            rhoncus urna neque. Ante metus dictum at tempor commodo ullamcorper
+            a. Sed id semper risus in hendrerit gravida rutrum. Orci sagittis eu
+            volutpat odio facilisis.
+          </p>
+        </div>
+        <div className="container mx-auto px-2 columns-lg">
+          <img
+            className="w-32 float-left"
+            src="https://images.pexels.com/photos/1003914/pexels-photo-1003914.jpeg?cs=srgb&dl=pexels-samer-daboul-1003914.jpg&fm=jpg"
+            alt="Image not found"
+          ></img>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi
+            tempus iaculis urna id volutpat lacus laoreet. Hac habitasse platea
+            dictumst quisque sagittis purus sit amet volutpat. Pharetra magna ac
+            placerat vestibulum. Nunc pulvinar sapien et ligula ullamcorper
+            malesuada. Quam id leo in vitae turpis. Ipsum dolor sit amet
+            consectetur. Nunc vel risus commodo viverra maecenas accumsan. Nisl
+            suscipit adipiscing bibendum est ultricies integer quis auctor. Odio
+            euismod lacinia at quis risus. Enim diam vulputate ut pharetra sit.
+            Diam ut venenatis tellus in metus vulputate eu scelerisque felis.
+            Viverra orci sagittis eu volutpat odio facilisis mauris sit.
+          </p>
+          <p>
+            Sit amet tellus cras adipiscing enim eu turpis egestas. Nulla
+            aliquet porttitor lacus luctus accumsan tortor. Sit amet tellus cras
+            adipiscing. Mattis pellentesque id nibh tortor id aliquet lectus
+            proin. Sit amet nisl suscipit adipiscing bibendum est ultricies.
+            Tortor at risus viverra adipiscing. Pharetra magna ac placerat
+            vestibulum. Sed egestas egestas fringilla phasellus faucibus
+            scelerisque eleifend donec. Morbi tempus iaculis urna id volutpat
+            lacus laoreet non. Faucibus et molestie ac feugiat sed lectus.
+            Lectus nulla at volutpat diam ut venenatis. Iaculis urna id volutpat
+            lacus laoreet. Urna cursus eget nunc scelerisque viverra mauris in
+            aliquam sem. Nunc pulvinar sapien et ligula ullamcorper malesuada
+            proin libero. Sapien et ligula ullamcorper malesuada proin libero
+            nunc consequat. Quis varius quam quisque id diam vel quam elementum
+            pulvinar. Sed augue lacus viverra vitae congue eu consequat.
+            Fringilla phasellus faucibus scelerisque eleifend donec.
+          </p>
+          <p>
+            Purus ut faucibus pulvinar elementum integer enim neque volutpat. In
+            iaculis nunc sed augue lacus viverra vitae congue. Posuere urna nec
+            tincidunt praesent. A scelerisque purus semper eget duis at tellus
+            at urna. Sed risus pretium quam vulputate. Sit amet aliquam id diam.
+            Posuere lorem ipsum dolor sit. Proin sagittis nisl rhoncus mattis
+            rhoncus urna neque. Ante metus dictum at tempor commodo ullamcorper
+            a. Sed id semper risus in hendrerit gravida rutrum. Orci sagittis eu
+            volutpat odio facilisis.
+          </p>
+        </div>
+      </div>
+
+      <div className="h-auto text-white bg-slate-700">
+        <div className="container mx-auto px-2 columns-lg">
+          <div className="relative p-8 bg-red-400 rounded-lg">
+            <div className="absolute top-40 inset-20 rounded-lg bg-green-400">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Morbi tempus iaculis urna id volutpat lacus laoreet. Hac
+                habitasse platea dictumst quisque sagittis purus sit amet
+                volutpat. Pharetra magna ac placerat vestibulum. Nunc pulvinar
+                sapien et ligula ullamcorper malesuada. Quam id leo in vitae
+                turpis. Ipsum dolor sit amet consectetur. Nunc vel risus commodo
+                viverra maecenas accumsan. Nisl suscipit adipiscing bibendum est
+                ultricies integer quis auctor. Odio euismod lacinia at quis
+                risus. Enim diam vulputate ut pharetra sit. Diam ut venenatis
+                tellus in metus vulputate eu scelerisque felis. Viverra orci
+                sagittis eu volutpat odio facilisis mauris sit.
+              </p>
+            </div>
+            <p>
+              Sit amet tellus cras adipiscing enim eu turpis egestas. Nulla
+              aliquet porttitor lacus luctus accumsan tortor. Sit amet tellus
+              cras adipiscing. Mattis pellentesque id nibh tortor id aliquet
+              lectus proin. Sit amet nisl suscipit adipiscing bibendum est
+              ultricies. Tortor at risus viverra adipiscing. Pharetra magna ac
+              placerat vestibulum. Sed egestas egestas fringilla phasellus
+              faucibus scelerisque eleifend donec. Morbi tempus iaculis urna id
+              volutpat lacus laoreet non. Faucibus et molestie ac feugiat sed
+              lectus. Lectus nulla at volutpat diam ut venenatis. Iaculis urna
+              id volutpat lacus laoreet. Urna cursus eget nunc scelerisque
+              viverra mauris in aliquam sem. Nunc pulvinar sapien et ligula
+              ullamcorper malesuada proin libero. Sapien et ligula ullamcorper
+              malesuada proin libero nunc consequat. Quis varius quam quisque id
+              diam vel quam elementum pulvinar. Sed augue lacus viverra vitae
+              congue eu consequat. Fringilla phasellus faucibus scelerisque
+              eleifend donec.
+            </p>
+            <p>
+              Purus ut faucibus pulvinar elementum integer enim neque volutpat.
+              In iaculis nunc sed augue lacus viverra vitae congue. Posuere urna
+              nec tincidunt praesent. A scelerisque purus semper eget duis at
+              tellus at urna. Sed risus pretium quam vulputate. Sit amet aliquam
+              id diam. Posuere lorem ipsum dolor sit. Proin sagittis nisl
+              rhoncus mattis rhoncus urna neque. Ante metus dictum at tempor
+              commodo ullamcorper a. Sed id semper risus in hendrerit gravida
+              rutrum. Orci sagittis eu volutpat odio facilisis.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="h-auto p-4 gap-2 grid grid-flow-row grid-cols-5">
+
+        <div className="p-4 text-black bg-white border rounded-lg shadow-md">
+          <img className="w-32 mb-2 blur-sm hover:blur-none"
+          src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"/>
+          <h1 className="text-2xl">Hello</h1>
+          <p className="mb-4 text-xs w-24">This hover over tbe image</p>
+          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">Say Hello</button>
+        </div>
+
+        <div className="p-4 text-black bg-white border rounded-lg shadow-md brightness-50 hover:brightness-100">
+          <img className="w-32 mb-2 brightness-200"
+          src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"/>
+          <h1 className="text-2xl">Hello</h1>
+          <p className="mb-4 text-xs w-24">This is bright!</p>
+          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">Say Hello</button>
+        </div>
+
+        <div className="p-4 text-black bg-white border rounded-lg shadow-md grayscale hover:grayscale-0">
+          <img className="w-32 mb-2"
+          src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"/>
+          <h1 className="text-2xl">Hello</h1>
+          <p className="mb-4 text-xs w-24">This has grayscale!</p>
+          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">Say Hello</button>
+        </div>
+
+        <div className="p-4 text-black bg-white border rounded-lg shadow-md hue-rotate-180">
+          <img className="w-32 mb-2"
+          src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"/>
+          <h1 className="text-2xl">Hello</h1>
+          <p className="mb-4 text-xs w-24">This has hue!</p>
+          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">Say Hello</button>
+        </div>
+
+        <div className="p-4 text-black bg-white border rounded-lg shadow-md invert">
+          <img className="w-32 mb-2"
+          src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"/>
+          <h1 className="text-2xl">Hello</h1>
+          <p className="mb-4 text-xs w-24">This has invert!</p>
+          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">Say Hello</button>
+        </div>
+
+        <div className="p-4 text-black bg-white border rounded-lg shadow-md">
+          <img className="w-32 mb-2 saturate-150"
+          src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"/>
+          <h1 className="text-2xl">Hello</h1>
+          <p className="mb-4 text-xs w-24">The img has saturate!</p>
+          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">Say Hello</button>
+        </div>
+
+      </div>
+
+      <div className="mt-4 -mb-3">
+        <div className="not-prose relative bg-slate-50 rounded-xl overflow-hidden">
+          <div className="absolute inset-0 bg-grid-slate-100 dark:bg-grid-slate-700/25"></div>
+          <div className="relative rounded-xl overflow-auto p-8 grid grid-flow-row-dense md:grid-cols-3 sm:grid-cols-1 gap-4">
+            <div className="overflow-visible relative pr-6 max-w-sm mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center">
+              <img
+                className="absolute -left-6 w-24 h-24 rounded-full shadow-lg"
+                src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80"
+              />
+              <div className="flex flex-col py-5 pl-24">
+                <strong className="text-slate-900 text-sm font-medium">
+                  Andrew Alfred
+                </strong>
+                <span className="text-slate-500 text-sm font-medium ">
+                  Technical advisor
+                </span>
+              </div>
+            </div>
+
+            <div className="overflow-visible relative pr-6 max-w-sm mx-auto bg-white shadow-lg ring-1 ring-black/5 rounded-xl flex items-center">
+              <div className="flex flex-col py-5 pl-4 pr-10">
+                <strong className="text-slate-900 text-sm font-medium">
+                  Andrew Alfred
+                </strong>
+                <span className="text-slate-500 text-sm font-medium ">
+                  Technical advisor
+                </span>
+              </div>
+              <img
+                className="absolute -right-10 w-24 h-24 rounded-full shadow-lg"
+                src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80"
+              />
+            </div>
+
+            <div className="overflow-hidden relative pr-6 max-w-sm mx-auto bg-white shadow-lg ring-1 ring-black rounded-xl flex items-center">
+              <img
+                className="absolute -left-6 w-24 h-24 rounded-full shadow-lg"
+                src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80"
+              />
+              <div className="flex flex-col py-5 pl-24">
+                <strong className="text-slate-900 text-sm font-medium ">
+                  Andrew Alfred
+                </strong>
+                <span className="text-slate-500 text-sm font-medium">
+                  Technical advisor
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="relative rounded-xl overflow-auto p-8">
+        <div className="overflow-auto h-72 relative max-w-sm mx-auto bg-white dark:bg-slate-800 dark:highlight-white/5 shadow-lg ring-1 ring-black/5 rounded-xl flex flex-col divide-y dark:divide-slate-200/5">
+          <div className="flex items-center gap-4 p-4">
+            <img
+              className="w-12 h-12 rounded-full"
+              src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80"
+            />
+            <div className="flex flex-col">
+              <strong className="text-slate-900 text-sm font-medium dark:text-slate-200">
+                Andrew Alfred
+              </strong>
+              <span className="text-slate-500 text-sm font-medium dark:text-slate-400">
+                Technical advisor
+              </span>
+            </div>
+          </div>
+          <div className="flex items-center gap-4 p-4">
+            <img
+              className="w-12 h-12 rounded-full"
+              src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80"
+            />
+            <div className="flex flex-col">
+              <strong className="text-slate-900 text-sm font-medium dark:text-slate-200">
+                Debra Houston
+              </strong>
+              <span className="text-slate-500 text-sm font-medium dark:text-slate-400">
+                Analyst
+              </span>
+            </div>
+          </div>
+          <div className="flex items-center gap-4 p-4">
+            <img
+              className="w-12 h-12 rounded-full"
+              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80"
+            />
+            <div className="flex flex-col">
+              <strong className="text-slate-900 text-sm font-medium dark:text-slate-200">
+                Jane White
+              </strong>
+              <span className="text-slate-500 text-sm font-medium dark:text-slate-400">
+                Director, Marketing
+              </span>
+            </div>
+          </div>
+          <div className="flex items-center gap-4 p-4">
+            <img
+              className="w-12 h-12 rounded-full"
+              src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=256&amp;h=256&amp;q=80"
+            />
+            <div className="flex flex-col">
+              <strong className="text-slate-900 text-sm font-medium dark:text-slate-200">
+                Ray Flint
+              </strong>
+              <span className="text-slate-500 text-sm font-medium dark:text-slate-400">
+                Technical Advisor
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <input
+        type="text"
+        placeholder="Default focus styles"
+        className="font-sans text-sm w-60 py-2 px-3 ring-1 ring-slate-900/10 text-slate-500 rounded-lg shadow-sm dark:bg-slate-800 dark:ring-0 dark:highlight-white/5 dark:text-slate-400"
+      ></input>
 
       <button className="bg-npt_colors-350 hover:bg-npt_colors-300 text-white font-bold py-2 px-4 rounded-full">
         Save Btn
       </button>
-      <button class="bg-purple-900 text-white hover:bg-blue-400 font-bold py-2 px-4 mt-3 rounded items-center">
+      <button className="bg-purple-900 text-white hover:bg-blue-400 font-bold py-2 px-4 mt-3 rounded items-center">
         Learn More
       </button>
       <h1 className="h-16 bg-blue-500 text-2xl font-bold">This is my h1</h1>
