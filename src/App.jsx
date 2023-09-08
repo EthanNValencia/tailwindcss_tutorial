@@ -1,9 +1,22 @@
 import React, { useState } from "react";
 import CustomModal from "./components/CustomModal";
+import Calendar from "react-calendar";
+import "./Calendar.css"; // If you are porting the Calendar, do not forget the css.
+import NtButton from "./components/NtButton";
+
 // import "./App.css";
 // https://www.youtube.com/watch?v=ft30zcMlFao 2:09
 function App() {
+  // dotenv.config()
+  console.log(import.meta.env.VITE_GOOGLE_MAPS_API_KEY);
+
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [date, setDate] = useState(new Date());
+
+  const calendarOnChange = (date) => {
+    setDate(date);
+    console.log(date);
+  };
 
   const openModal = () => {
     setModalIsOpen(true);
@@ -15,6 +28,15 @@ function App() {
 
   return (
     <>
+      <NtButton inactiveButtonLabel="Begin" />
+      <div>
+        <Calendar
+          onChange={calendarOnChange}
+          value={date}
+          defaultValue={new Date()}
+        />
+      </div>
+
       <h1 className="text-3xl font-bold underline">Hello world!</h1>
       <h1 className="bg-green-400 text-white">Green!</h1>
       <h1 className="text-vuejs-932">VueJS color?!</h1>
@@ -277,55 +299,77 @@ function App() {
       </div>
 
       <div className="h-auto p-4 gap-2 grid grid-flow-row grid-cols-5">
-
         <div className="p-4 text-black bg-white border rounded-lg shadow-md">
-          <img className="w-32 mb-2 blur-sm hover:blur-none"
-          src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"/>
+          <img
+            className="w-32 mb-2 blur-sm hover:blur-none"
+            src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+          />
           <h1 className="text-2xl">Hello</h1>
           <p className="mb-4 text-xs w-24">This hover over tbe image</p>
-          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">Say Hello</button>
+          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">
+            Say Hello
+          </button>
         </div>
 
         <div className="p-4 text-black bg-white border rounded-lg shadow-md brightness-50 hover:brightness-100">
-          <img className="w-32 mb-2 brightness-200"
-          src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"/>
+          <img
+            className="w-32 mb-2 brightness-200"
+            src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+          />
           <h1 className="text-2xl">Hello</h1>
           <p className="mb-4 text-xs w-24">This is bright!</p>
-          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">Say Hello</button>
+          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">
+            Say Hello
+          </button>
         </div>
 
         <div className="p-4 text-black bg-white border rounded-lg shadow-md grayscale hover:grayscale-0">
-          <img className="w-32 mb-2"
-          src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"/>
+          <img
+            className="w-32 mb-2"
+            src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+          />
           <h1 className="text-2xl">Hello</h1>
           <p className="mb-4 text-xs w-24">This has grayscale!</p>
-          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">Say Hello</button>
+          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">
+            Say Hello
+          </button>
         </div>
 
         <div className="p-4 text-black bg-white border rounded-lg shadow-md hue-rotate-180">
-          <img className="w-32 mb-2"
-          src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"/>
+          <img
+            className="w-32 mb-2"
+            src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+          />
           <h1 className="text-2xl">Hello</h1>
           <p className="mb-4 text-xs w-24">This has hue!</p>
-          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">Say Hello</button>
+          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">
+            Say Hello
+          </button>
         </div>
 
         <div className="p-4 text-black bg-white border rounded-lg shadow-md invert">
-          <img className="w-32 mb-2"
-          src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"/>
+          <img
+            className="w-32 mb-2"
+            src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+          />
           <h1 className="text-2xl">Hello</h1>
           <p className="mb-4 text-xs w-24">This has invert!</p>
-          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">Say Hello</button>
+          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">
+            Say Hello
+          </button>
         </div>
 
         <div className="p-4 text-black bg-white border rounded-lg shadow-md">
-          <img className="w-32 mb-2 saturate-150"
-          src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"/>
+          <img
+            className="w-32 mb-2 saturate-150"
+            src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8NXx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60"
+          />
           <h1 className="text-2xl">Hello</h1>
           <p className="mb-4 text-xs w-24">The img has saturate!</p>
-          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">Say Hello</button>
+          <button className="text-xs px-3 py-2 rounded-lg cursor-pointer text-white bg-cyan-500 shadow-md shadow-cyan-600/50">
+            Say Hello
+          </button>
         </div>
-
       </div>
 
       <div className="mt-4 -mb-3">
@@ -438,6 +482,95 @@ function App() {
               </span>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="grid grid-flow-row grid-cols-7">
+        <div className="m-4">
+          <button className="pl-4 pr-4 pt-2 pb-2 rounded-md transition ease-in-out delay-150 bg-blue-500 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300">
+            Hover Save Changes
+          </button>
+        </div>
+
+        <div className="m-4">
+          <button className="pl-4 pr-4 pt-2 pb-2 rounded-md transition ease-in-out delay-150 bg-blue-500 active:-translate-y-1 active:scale-110 active:bg-indigo-500 duration-300">
+            OnClick Save Changes
+          </button>
+        </div>
+
+        <div>
+          <button
+            type="button"
+            class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-white bg-indigo-500 hover:bg-indigo-400 transition ease-in-out duration-150 cursor-not-allowed"
+            disabled=""
+          >
+            <svg
+              class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                class="opacity-25"
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+              ></circle>
+              <path
+                class="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              ></path>
+            </svg>
+            Processing...
+          </button>
+        </div>
+
+        <div>
+          <span class="relative inline-flex">
+            <button
+              type="button"
+              class="inline-flex items-center px-4 py-2 font-semibold leading-6 text-sm shadow rounded-md text-sky-500 bg-white dark:bg-slate-800 transition ease-in-out duration-150 cursor-not-allowed ring-1 ring-slate-900/10 dark:ring-slate-200/20"
+              disabled=""
+            >
+              Transactions
+            </button>
+            <span class="flex absolute h-3 w-3 top-0 right-0 -mt-1 -mr-1">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-3 w-3 bg-sky-500"></span>
+            </span>
+          </span>
+        </div>
+
+        <div class="border border-blue-300 shadow rounded-md p-4 max-w-sm w-full mx-auto">
+          <div class="animate-pulse flex space-x-4">
+            <div class="rounded-full bg-slate-700 h-10 w-10"></div>
+            <div class="flex-1 space-y-6 py-1">
+              <div class="h-2 bg-slate-700 rounded"></div>
+              <div class="space-y-3">
+                <div class="grid grid-cols-3 gap-4">
+                  <div class="h-2 bg-slate-700 rounded col-span-2"></div>
+                  <div class="h-2 bg-slate-700 rounded col-span-1"></div>
+                </div>
+                <div class="h-2 bg-slate-700 rounded"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="animate-bounce bg-white dark:bg-slate-800 p-2 w-10 h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center">
+          <svg
+            class="w-6 h-6 text-violet-500"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+          </svg>
         </div>
       </div>
 
